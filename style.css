@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans|Poppins|Roboto&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Noto Sans',sans-serif;
+	color: #7f8c8d;
+	font-size: 80%;
+}
+
+.container{
+    padding: 2.5rem 5rem;
+    border: solid 1px rgba(0,0,0,0.16);
+    border-radius: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container-head{
+	text-align: center;
+}
+
+.title{
+	font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    padding: .5rem .25rem;
+    color: #222;
+    font-weight: 500;
+}
+
+
+.sub-title{
+	font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500 !important;  
+    opacity: 0.8;  
+    padding: .5rem .25rem;
+}
+
+
+form > .input-group{
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.input-group > .form-control{
+    padding-top: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    min-width: 280px;
+    border:none;
+    border: solid .5px rgba(0, 0, 0, 0.16);
+    border-radius: .25rem;
+    outline: none;
+    font-size: 16px;
+    transition: .2s;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.input-group > label{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    text-transform: capitalize;
+    font-size: 12px;
+    transition: .2s;
+    padding: 0 .5rem;
+    left: .5rem;
+    z-index: -1;
+}
+
+.form-control:focus{
+    border-color: #1a73e8;
+    border-width: .15rem;
+}
+.form-control:focus ~ label,
+.form-control.valid ~ label{
+    color: #1a73e8;
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 1;
+
+
+}
+
+.form-control.valid:not(:focus) ~ label{
+    color: inherit;
+}
+
+button[type=submit]{
+    padding: .5rem 1.5rem;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background: #1a73e8;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: #1a73e8;
+}
+
+.login-toggle{
+
+	font-weight: 600;
+}
